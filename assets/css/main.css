@@ -29,15 +29,14 @@ nav li {
 }
 
 
-/* Styles pour les écrans plus petits (moins de 768px de largeur) */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Change la direction pour une meilleure expérience sur les écrans étroits */
-        text-align: center; /* Centre les éléments de la navbar */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     nav li {
-        margin: 10px 0; /* Espacement entre les éléments de la navbar */
+        margin: 10px 0;
     }
 }
 
@@ -48,38 +47,44 @@ nav li {
     margin-left: 20px; /* Décale le logo de 20 pixels vers la droite */
 }
 
+
 nav {
     flex-grow: 1;
 }
+
 
 nav a {
     text-decoration: none;
     color: #fff;
 }
 
-/* Styles pour les sections */
+
 section {
     padding: 40px;
     border-bottom: 1px solid #eee;
 }
+
 
 h1, h2 {
     font-size: 24px;
     margin: 20px 0;
 }
 
+
 .flex-container {
     display: flex;
-    flex-direction: row; /* Affiche l'image et le texte côte à côte */
+    flex-direction: row; 
     align-items: center;
 }
 
+
 .flex-item {
     flex: 1;
-    max-width: 30%; /* Ajustez selon vos besoins */
-    margin: 0 20px; /* Marge entre les éléments */
+    max-width: 30%; 
+    margin: 0 20px; 
 }
 
+
 .flex-item.reverse {
-    order: -1; /* Inverse l'ordre des éléments (image et texte) */
+    order: -1;
 }
