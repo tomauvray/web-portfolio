@@ -4,6 +4,7 @@ body {
     padding: 0;
 }
 
+
 header {
     background-color: #333;
     color: #fff;
@@ -13,15 +14,6 @@ header {
     padding: 20px 0;
 }
 
-.logo img {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px; /* Décale le logo de 20 pixels vers la droite */
-}
-
-nav {
-    flex-grow: 1;
-}
 
 nav ul {
     list-style: none;
@@ -31,8 +23,33 @@ nav ul {
     align-items: center;
 }
 
+
 nav li {
     margin: 0 20px;
+}
+
+
+/* Styles pour les écrans plus petits (moins de 768px de largeur) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Change la direction pour une meilleure expérience sur les écrans étroits */
+        text-align: center; /* Centre les éléments de la navbar */
+    }
+
+    nav li {
+        margin: 10px 0; /* Espacement entre les éléments de la navbar */
+    }
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px; /* Décale le logo de 20 pixels vers la droite */
+}
+
+nav {
+    flex-grow: 1;
 }
 
 nav a {
