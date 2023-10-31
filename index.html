@@ -74,5 +74,26 @@
         <h2>Contact</h2>
         <p>Vous pouvez me contacter à</p>
     </section>
+
+    <button id="scroll-to-top">Remonter en haut</button>
+
+    <script>
+        var scrollToTopButton = document.getElementById('scroll-to-top');
+
+        // Afficher le bouton lorsque l'utilisateur fait défiler la page
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) { // Vous pouvez ajuster cette valeur selon votre préférence
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        // Faire défiler en haut de la page lorsque le bouton est cliqué
+        scrollToTopButton.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
 </body>
 </html>
