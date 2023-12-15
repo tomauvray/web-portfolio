@@ -1,0 +1,72 @@
+.contact-form {
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    height: 650px;
+}
+
+.contact-form .form-textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px; 
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 100px;
+    gap: 2px;
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 1.625rem;
+    padding: 10px 20px;
+    width: 7.25rem;
+    color: #000000;
+    font-size: 15px;;
+    font-weight: bold;
+}
+
+form input[type="submit"] {
+    align-self: center;
+    margin-left: 0px;
+}
+
+form label[for="name"],
+form label[for="email"],
+form label[for="subject"],
+form label[for="message"]{
+    color: black
+}
+
+form input[type="text"],
+form input[type="email"] {
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .contact-form {
+        margin: auto;
+    }
+}
+
+.contact-form label {
+    margin-bottom: 10px; /* Ajustez cette valeur selon vos besoins */
+}

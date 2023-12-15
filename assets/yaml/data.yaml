@@ -1,0 +1,5 @@
+-
+    name: "Exemple nom de l'expéditeur"
+    email: exemple_adresse_mail@gmail.com
+    subject: "Exemple d'objet de message"
+    message: "Exemple de contenu d'un message via le formulaire contact du site."
